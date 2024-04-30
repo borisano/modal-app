@@ -12,5 +12,13 @@
 
   <body>
     <%= yield %>
+
+    <dialog data-controller="dialog" data-action="keydown.meta+k@window->dialog#open">
+      <form method="dialog">
+        <button>Close</button>
+      </form>
+
+      <!-- Search input and results will go there -->
+    </dialog>
   </body>
 </html>
